@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    font-family: 'Inter', sans-serif;;
+}
+
+path{
+    fill: #ECCEA7;
+    stroke: #fff;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: fill .5s;
+}
+
+path:hover{
+    fill: #FA9E27;
+}
+
+.state-info-box{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    min-height: 417px;
+    background-color: #F5E7D3;
+    border: 4px solid #FA9E27;
+    border-radius: 10px;
+    padding: 35px;
+    gap: 36px;
+}
+
+.state-info{
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    align-items: flex-end;
+}
+
+.uf{
+    display: grid;
+    place-items: center;
+    height: 100px;
+    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #FA9E27;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 2.25rem;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.title{
+    font-weight: 900;
+    color: #FA9E27;
+    font-size: 2rem;
+}
+
+.desc{
+    font-weight: 900;
+    font-size: 0.875rem;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.cities-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.cities-list li{
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+
+.cities-list li:last-child{
+    padding-bottom: 0px;
+}
+
+.cities-list::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+.cities-list::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+.cities-list::-webkit-scrollbar-thumb {
+    background-color: #FA9E27;
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #FA9E27;  /* creates padding around scroll thumb */
+  }
+
+  #instrucao{
+      font-size: 1.75rem
+  }
